@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>5d3f61a8-5556-407b-9f06-8a9f48815716</id>
+  <name>Body weight</name>
+  <definition xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.body_weight.v1" concept_name="Body weight">
+    <Rule path="/data[at0002]/events[at0003 and name/value='Any event']/data[at0001]/items[at0004]">
+      <constraint xsi:type="quantityConstraint">
+        <excludedUnits>lb</excludedUnits>
+      </constraint>
+    </Rule>
+    <Rule path="/data[at0002]/events[at0003 and name/value='Any event']/data[at0001]/items[at0024]" max="0" />
+    <Rule path="/data[at0002]/events[at0003 and name/value='Any event']/state[at0008]/items[at0009]" max="0" />
+    <Rule path="/data[at0002]/events[at0003 and name/value='Any event']/state[at0008]/items[at0025]" max="0" />
+  </definition>
+</template>

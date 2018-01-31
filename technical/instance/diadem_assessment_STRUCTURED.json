@@ -1,0 +1,302 @@
+{
+  "diadem_assessment": {
+    "language": [
+      {
+        "|code": "en",
+        "|terminology": "ISO_639-1"
+      }
+    ],
+    "territory": [
+      {
+        "|code": "GB",
+        "|terminology": "ISO_3166-1"
+      }
+    ],
+    "context": [
+      {
+        "_health_care_facility": [
+          {
+            "|id": "1003456",
+            "|id_scheme": "nhs.uk",
+            "|id_namespace": "nhs.uk",
+            "|name": "GP Surgery"
+          }
+        ],
+        "start_time": [
+          "2016-06-22T17:28:57.027Z"
+        ],
+        "setting": [
+          {
+            "|code": "238",
+            "|value": "other care",
+            "|terminology": "openehr"
+          }
+        ]
+      }
+    ],
+    "yhscn_-_diadem_assessment_v0": [
+      {
+        "functional_impairment": [
+          {
+            "|code": "at0006",
+            "|value": "No longer fully independent",
+            "|terminology": "local"
+          }
+        ],
+        "corroborating_history": [
+          {
+            "|code": "at0010",
+            "|value": "Corroborating history NOT confirmed",
+            "|terminology": "local"
+          }
+        ],
+        "investigations": [
+          {
+            "|code": "at0013",
+            "|value": "Abnormal Dementia screening bloods",
+            "|terminology": "local"
+          }
+        ],
+        "reason_why_bloods_not_done": [
+          "Could not find vein"
+        ],
+        "exclusion_criteria": [
+          {
+            "|code": "at0014",
+            "|value": "NO acute underlying cause to explain confusion",
+            "|terminology": "local"
+          }
+        ],
+        "interpretation": [
+          {
+            "|code": "at0029",
+            "|value": "Dementia diagnosis likely",
+            "|terminology": "local"
+          }
+        ],
+        "time": [
+          "2016-06-22T17:28:57.027Z"
+        ],
+        "language": [
+          {
+            "|code": "en",
+            "|terminology": "ISO_639-1"
+          }
+        ],
+        "encoding": [
+          {
+            "|code": "UTF-8",
+            "|terminology": "IANA_character-sets"
+          }
+        ]
+      }
+    ],
+    "a6_cit_assessment_v0": [
+      {
+        "what_year": [
+          {
+            "|code": "at0005",
+            "|value": "Correct",
+            "|ordinal": 0
+          }
+        ],
+        "what_month": [
+          {
+            "|code": "at0008",
+            "|value": "Correct",
+            "|ordinal": 0
+          }
+        ],
+        "about_what_time": [
+          {
+            "|code": "at0012",
+            "|value": "Incorrect",
+            "|ordinal": 3
+          }
+        ],
+        "count_backwards": [
+          {
+            "|code": "at0016",
+            "|value": "More than 1 error",
+            "|ordinal": 4
+          }
+        ],
+        "months_in_reverse": [
+          {
+            "|code": "at0018",
+            "|value": "No error",
+            "|ordinal": 0
+          }
+        ],
+        "repeat_address_phrase": [
+          {
+            "|code": "at0022",
+            "|value": "No errors",
+            "|ordinal": 0
+          }
+        ],
+        "total_score": [
+          5
+        ],
+        "time": [
+          "2016-06-22T17:28:57.027Z"
+        ],
+        "language": [
+          {
+            "|code": "en",
+            "|terminology": "ISO_639-1"
+          }
+        ],
+        "encoding": [
+          {
+            "|code": "UTF-8",
+            "|terminology": "IANA_character-sets"
+          }
+        ]
+      }
+    ],
+    "gpcog_screening_test.v0": [
+      {
+        "step_1_patient_examination": [
+          {
+            "time_orientation": [
+              {
+                "|code": "at0010",
+                "|value": "Correct",
+                "|ordinal": 1
+              }
+            ],
+            "clock_drawing_-_specific_time": [
+              {
+                "|code": "at0015",
+                "|value": "Incorrect",
+                "|ordinal": 0
+              }
+            ],
+            "clock_drawing_-_all_numbers": [
+              {
+                "|code": "at0013",
+                "|value": "Correct",
+                "|ordinal": 1
+              }
+            ],
+            "information": [
+              {
+                "|code": "at0018",
+                "|value": "Incorrect",
+                "|ordinal": 0
+              }
+            ],
+            "recall_first_name": [
+              {
+                "|code": "at0021",
+                "|value": "Incorrect",
+                "|ordinal": 0
+              }
+            ],
+            "recall_surname": [
+              {
+                "|code": "at0025",
+                "|value": "Correct",
+                "|ordinal": 1
+              }
+            ],
+            "recall_house_number": [
+              {
+                "|code": "at0028",
+                "|value": "Incorrect",
+                "|ordinal": 0
+              }
+            ],
+            "recall_street_name": [
+              {
+                "|code": "at0032",
+                "|value": "Correct",
+                "|ordinal": 1
+              }
+            ],
+            "recall_locality_or_town": [
+              {
+                "|code": "at0034",
+                "|value": "Incorrect",
+                "|ordinal": 0
+              }
+            ],
+            "total_score": [
+              1
+            ]
+          }
+        ],
+        "step_2_informant_interview": [
+          {
+            "trouble_remembering": [
+              {
+                "|code": "at0042",
+                "|value": "Don't know",
+                "|terminology": "local"
+              }
+            ],
+            "trouble_recalling_conversations": [
+              {
+                "|code": "at0044",
+                "|value": "Yes",
+                "|terminology": "local"
+              }
+            ],
+            "difficulty_finding_right_words_or_using_wrong_words": [
+              {
+                "|code": "at0050",
+                "|value": "Don't know",
+                "|terminology": "local"
+              }
+            ],
+            "less_able_to_manage_money": [
+              {
+                "|code": "at0055",
+                "|value": "Not applicable",
+                "|terminology": "local"
+              }
+            ],
+            "less_able_to_manage_medication": [
+              {
+                "|code": "at0058",
+                "|value": "No",
+                "|terminology": "local"
+              }
+            ],
+            "needs_more_assistance_with_transport": [
+              {
+                "|code": "at0064",
+                "|value": "Don't know",
+                "|terminology": "local"
+              }
+            ],
+            "total_score": [
+              1
+            ]
+          }
+        ],
+        "time": [
+          "2016-06-22T17:28:57.027Z"
+        ],
+        "language": [
+          {
+            "|code": "en",
+            "|terminology": "ISO_639-1"
+          }
+        ],
+        "encoding": [
+          {
+            "|code": "UTF-8",
+            "|terminology": "IANA_character-sets"
+          }
+        ]
+      }
+    ],
+    "composer": [
+      {
+        "|name": "Sara"
+      }
+    ]
+  }
+}
