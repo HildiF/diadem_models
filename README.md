@@ -1,4 +1,4 @@
-![Logos](docs/images/logos.png)
+![Logos](docs/images/Logos.png)
 
 These are the models and design documentation for the Code4Health DiADeM project. Other relevant artefacts are contained in the following github repositories:
 
