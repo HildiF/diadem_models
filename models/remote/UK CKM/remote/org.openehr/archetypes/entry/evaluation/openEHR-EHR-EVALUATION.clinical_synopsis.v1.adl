@@ -6,6 +6,12 @@ concept
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			author = <
+				["name"] = <"Mona Saleh">
+			>
+		>
 		["de"] = <
 			language = <[ISO_639-1::de]>
 			author = <
@@ -13,22 +19,6 @@ language
 				["organisation"] = <"Health Informatics Centre, Karolinska Institutet, Sweden">
 			>
 			accreditation = <"fluent in both English and German, Medical Informatics 'MSc' degree from Heidelberg, 2 years professional experience in health informatics, some translation experience, openEHR knowledge.">
-		>
-		["zh-cn"] = <
-			language = <[ISO_639-1::zh-cn]>
-			author = <
-				["name"] = <"Lin Zhang">
-				["organisation"] = <"BIPH">
-			>
-			accreditation = <"What goes here?">
-		>
-		["fa"] = <
-			language = <[ISO_639-1::fa]>
-			author = <
-				["name"] = <"Shahla Foozonkhah">
-				["organisation"] = <"Ocean Informatics">
-				["email"] = <"shahla.foozonkhah@oceaninformatics.com">
-			>
 		>
 		["es-ar"] = <
 			language = <[ISO_639-1::es-ar]>
@@ -38,10 +28,12 @@ language
 			>
 			accreditation = <"Medical Doctor (Internal Medicine Specialist)">
 		>
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
+		["fa"] = <
+			language = <[ISO_639-1::fa]>
 			author = <
-				["name"] = <"Mona Saleh">
+				["name"] = <"Shahla Foozonkhah">
+				["organisation"] = <"Ocean Informatics">
+				["email"] = <"shahla.foozonkhah@oceaninformatics.com">
 			>
 		>
 		["pt-br"] = <
@@ -51,12 +43,20 @@ language
 				["organisation"] = <"Universidade de São Paulo">
 			>
 		>
+		["zh-cn"] = <
+			language = <[ISO_639-1::zh-cn]>
+			author = <
+				["name"] = <"Lin Zhang">
+				["organisation"] = <"BIPH">
+			>
+			accreditation = <"What goes here?">
+		>
 	>
 description
 	original_author = <
 		["name"] = <"Sam Heard">
-		["organisation"] = <"Ocean Informatics, Australia">
 		["email"] = <"sam.heard@oceaninformatics.com">
+		["organisation"] = <"Ocean Informatics, Australia">
 		["date"] = <"2007-01-09">
 	>
 	details = <
@@ -145,7 +145,7 @@ The term “Clinical Synopsis” can sometimes refer to complex and comprehensiv
 	other_contributors = <"Koray Atalag, University of Auckland, New Zealand", "Marco Borges, P2D, Brazil", "Rong Chen, Cambio Healthcare Systems, Sweden", "Stephen Chu, NeHTA, Australia", "Tamsin Cockayne, Australia", "Paul Donaldson, Nursing Informatics Australia, Australia", "Shahla Foozonkhah, Ocean Informatics, Australia", "Sam Heard, Ocean Informatics, Australia", "Evelyn Hovenga, EJSH Consulting, Australia", "Eugene Igras, IRIS Systems, Inc., Canada", "Shinji Kobayashi, Ehime University, Japan", "Robert Legan, NEHTA, Australia", "Heather Leslie, Ocean Informatics, Australia", "Rikard Lovstrom, Swedish Medical Association, Sweden", "Rohan Martin, Ambulance Victoria, Australia", "Ian McNicoll, Ocean Informatics, United Kingdom", "Jeroen Meintjens, Medisch Centrum Alkmaar, Netherlands", "Arturo Romero, SESCAM, Spain">
 	other_details = <
 		["references"] = <"Clinical Synopsis (Data Specifications) Version 1.0 [Internet]. Sydney, Australia: National E-Health Transition Authority; 2007 Jun 29 [cited 2009 Oct 12]; Available at http://www.nehta.gov.au/DGL/Resources/Downloads/Clinical%20Synopsis%20v1.0.pdf">
-		["MD5-CAM-1.0.1"] = <"2D066E7C501C2DAEC625DEE2ECD81DF4">
+		["MD5-CAM-1.0.1"] = <"77351107E7FE45FEC5DC08AA24916D64">
 	>
 
 definition
@@ -158,12 +158,15 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {	-- Date of discussion
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
 				}
 			}
 		}
 	}
-
-
 
 ontology
 	term_definitions = <
@@ -181,6 +184,10 @@ ontology
 					text = <"Synopsis">
 					description = <"The summary, assessment, conclusions or evaluation of the clinical findings.">
 				>
+				["at0003"] = <
+					text = <"Date of discussion">
+					description = <"Date when discussion took place.">
+				>
 			>
 		>
 		["fa"] = <
@@ -196,6 +203,10 @@ ontology
 				["at0002"] = <
 					text = <"خلاصه">
 					description = <"خلاصه ، ارزیابی ، نتیجه ، یا ارزشیابی یافته های بالینی">
+				>
+				["at0003"] = <
+					text = <"*New element(en)">
+					description = <"**(en)">
 				>
 			>
 		>
@@ -213,6 +224,10 @@ ontology
 					text = <"المختصر">
 					description = <"الملخص, التقييم, الاستنتاجات أو التقييم للموجودات السريرية">
 				>
+				["at0003"] = <
+					text = <"*New element(en)">
+					description = <"**(en)">
+				>
 			>
 		>
 		["de"] = <
@@ -228,6 +243,10 @@ ontology
 				["at0002"] = <
 					text = <"Synopsis">
 					description = <"Die Zusammenfassung, Beurteilung, Aussagen or Auswertung des klinischen Befunds.">
+				>
+				["at0003"] = <
+					text = <"*New element(en)">
+					description = <"**(en)">
 				>
 			>
 		>
@@ -245,6 +264,10 @@ ontology
 					text = <"Sinopsis">
 					description = <"El sumario, la impresión diagnóstica y las conclusiones sobre los hallazgos clínicos.">
 				>
+				["at0003"] = <
+					text = <"*New element(en)">
+					description = <"**(en)">
+				>
 			>
 		>
 		["pt-br"] = <
@@ -261,6 +284,10 @@ ontology
 					text = <"Sinopse">
 					description = <" O sumário, a avaliação, conclusões ou avaliação dos achados clínicos.">
 				>
+				["at0003"] = <
+					text = <"*New element(en)">
+					description = <"**(en)">
+				>
 			>
 		>
 		["zh-cn"] = <
@@ -276,6 +303,10 @@ ontology
 				["at0002"] = <
 					text = <"提要">
 					description = <"对于临床所见（临床发现）进行的概括、评估、总结或评价。">
+				>
+				["at0003"] = <
+					text = <"*New element(en)">
+					description = <"**(en)">
 				>
 			>
 		>
